@@ -24,6 +24,12 @@ kotlin {
                 implementation(compose.desktop.common)
             }
         }
+        val androidMain by getting {
+            dependencies {
+                implementation("androidx.compose.ui:ui-tooling:1.3.0")
+                implementation("androidx.compose.ui:ui-tooling-preview:1.3.0")
+            }
+        }
     }
 }
 
@@ -37,11 +43,6 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    sourceSets {
-        named("main") {
-            resources.srcDir("src/commonMain/resources")
-        }
     }
 }
 

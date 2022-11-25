@@ -10,6 +10,6 @@ import androidx.compose.runtime.Composable
 
 @Preview
 @Composable
-fun Preview() {
+fun DesktopCheckPreview() {
     HelloCompose()
 }
